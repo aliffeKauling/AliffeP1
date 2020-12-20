@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>onion-corporationl</title>
+    <wicket:link>  
+        <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+        <link rel="stylesheet" href="../../assets/css/styles.min.css">
+    </wicket:link>
+</head>
+
+<body>
+    <div>
+        <div class="header-blue">
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
+                <div class="container-fluid"><a class="navbar-brand" href="#">Union Corporation</a><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            </nav>
+        </div>
+    </div>
+    <h4 class="text-center text-secondary" style="padding-top: 5;padding-right: 5;padding-bottom: 15;padding-left: 5;">Listagem de Vendas por Semestre</h4>
+    <div class="table-responsive">
+        <table class="table" wicket:id="tabela">
+            <thead>
+                <tr>
+                    <th style="width: 400px;">Funcionário</th>
+                    <th>Região</th>
+                    <th>Trimestre</th>
+                    <th>Cota</th>
+                    <th>Vendas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  wicket:id="linhas">
+                    <td><span wicket:id="nome-funcionario"></span></td>
+                    <td><span wicket:id="nome-regiao"></span></td>
+                    <td><span wicket:id="trimestre"></span></td>
+                    <td><span wicket:id="cota"></span></td>
+                    <td><span wicket:id="vendas"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div><button type="button" class="btn btn-sm btn-outline-dark " wicket:id="botao-adicionar">Adicionar venda</button></div>
+    </div>
+<wicket:link>  
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+</wicket:link>
+</body>
+
+</html>

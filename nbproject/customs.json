@@ -1,0 +1,10 @@
+{
+    "elements": {
+        "wicket:link": {}
+    },
+    "attributes": {
+        "wicket:id": {
+            "context": "table"
+        }
+    }
+}
